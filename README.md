@@ -2,7 +2,7 @@
 
 Finding a way to perform typecheck on vitest using [--typecheck flag](https://vitest.dev/guide/testing-types.html#run-typechecking):
 
-## Setup information
+## Setup information
 
 | Path                            | Has type error is source file | Has type error inside test file |
 |---------------------------------|-------------------------------|---------------------------------|
@@ -28,3 +28,15 @@ Include:
 in `vite.config.js``
 
 - https://github.com/vitest-dev/vitest/issues/4767
+
+### Can't run js and ts check at the same time
+
+When running with typecheck vitest doesn't perform runtime check and vice versa.
+
+To solve the issue I used 2 separate workspaces:
+
+![workspace std](./docs/workspace-run-std.png)
+
+The result is what you see in the next image:
+
+![error std](./docs/type-runtime-errors-std.png)

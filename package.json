@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "format": "prettier --write ./src ./tests",
-    "test": "vitest --typecheck --run",
-    "test:watch": "vitest --typecheck --watch",
+    "test": "vitest --run",
+    "test:watch": "vitest --watch",
     "build": "tsc --noEmit"
   },
   "repository": {

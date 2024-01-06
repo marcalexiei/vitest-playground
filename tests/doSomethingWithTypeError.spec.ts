@@ -11,7 +11,7 @@ describe("isOnanist", () => {
   });
 
   it("tests from documentation", () => {
-    expectTypeOf({ a: 1 }).toEqualTypeOf<{ a: number }>();
+    expectTypeOf({ a: 1 }).toEqualTypeOf<{ a: string }>();
     expectTypeOf({ a: 1 }).toEqualTypeOf<{ a: number }>();
     expectTypeOf({ a: 1 }).toEqualTypeOf({ a: 2 });
     expectTypeOf({ a: 1, b: 1 }).not.toEqualTypeOf<{ a: number }>();
