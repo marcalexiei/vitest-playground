@@ -13,13 +13,12 @@ Finding a way to perform typecheck on vitest using [--typecheck flag](https://vi
 
 ### How to get typechecking on both tests and source files
 
-Set `module` and `moduleResolution` to `nodeNext`
-
 Include:
 
 ```js
   test: {
     typecheck: {
+      tsconfig: './tsconfig.test.json',
       include: ['**/tests/**/*.spec.ts(x)?'],
     },
   },
