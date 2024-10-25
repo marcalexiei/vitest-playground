@@ -10,9 +10,9 @@ describe('isOnanist', () => {
     expect(doSomething()).toBe(false);
   });
 
-  // it("throw runtime error", () => {
-  //   expect(doSomething()).toBe(true);
-  // });
+  it('throw runtime error', () => {
+    expect(doSomething()).toBe(true);
+  });
 
   it('tests from documentation', () => {
     expectTypeOf<2>().toEqualTypeOf<2>();
